@@ -19,6 +19,6 @@ export default App;
 
 function Test(){
   return(
-    <h1>ZDAROVA</h1>
+    <h1>ERROR</h1>
   )
 }
