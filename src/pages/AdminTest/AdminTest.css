@@ -1,0 +1,65 @@
+@import url(../../assets/fonts/fonts.css);
+
+.test_main{
+    width: 100%;
+    height: 100vh;
+    margin-top: 70px;
+    justify-content: center;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.test_main h1{
+    text-align: center;
+    color: white;
+    font-family: 'Balaveri';
+    font-weight: bold;
+}
+
+.test_main p{
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+form{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    justify-items: center;
+    width: 70%;
+}
+
+.box{
+    width: 50%;
+    margin-top: 20px;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: space-between;
+}
+
+.box label{
+    font-family: 'Balaveri', 'Monsterrat';
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+}
+
+.box input{
+    width: 200px;
+    height: 25px;
+    outline: none;
+    margin-top: 7px;
+    border-radius: 13px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-family: 'Balaveri', 'Monsterrat';
+    font-weight: bold;
+    color: var(--activeColor);
+}
+

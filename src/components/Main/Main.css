@@ -1,0 +1,133 @@
+@import url(../../assets/fonts/fonts.css);
+
+* {
+	padding: 0;
+	margin: 0;
+    list-style: none;
+}
+
+:root {
+	--mainColor: #29335c;
+	--mainColorLight: #5767aa;
+	--secondaryColor: #db2b39;
+	--textColor: #eee;
+}
+
+.active button{
+    color: rgb(13, 59, 211);
+}
+
+body{
+    background-color: rgb(4, 4, 43);
+}
+
+header {
+	margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 95%;
+    height: 70px;
+    border-radius: 20px;
+    background-color: rgb(6, 6, 67);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.008);
+    display: flex;
+}
+
+#logo{
+    background: none;
+    border: none;
+    color: white;
+    font-weight:900;
+    font-family: 'Monsterrat';
+    font-size: 17px;
+    text-align: center;
+    margin-left: 37px;
+    margin-top: 13px;
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    margin-top: 25px;
+    z-index: 10;
+	justify-items: center;
+	justify-content: center;
+}
+
+.link{
+    background: none;
+    border: none;
+    color: white;
+    margin-right: 25px;
+    cursor: pointer;
+    font-family: 'Balaveri';
+    font-size: 15px;
+    font-weight: bold;
+	display: inline-block;
+	text-align: center;
+
+}
+
+.link:hover{
+    color: rgb(13, 59, 211);
+}
+
+header .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--textColor);
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+}
+
+
+@media only screen and (max-width: 1024px) {
+	header .nav-btn {
+		visibility: visible;
+		opacity: 1;
+        position: absolute;
+        right: 0;
+        margin-right: 40px;
+        margin-top: 15px;
+	}
+
+	header nav {
+		position: fixed;
+		top: -100vh;
+        margin-top: 0px;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		background-color: var(--mainColor);
+		transition: 1s;
+	}
+
+	header .responsive_nav {
+		transform: translateY(100vh);
+	}
+
+	nav .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+
+	.link {
+		display: inline-block;
+		text-align: center;
+		width: 100%;
+	  }
+	  
+}

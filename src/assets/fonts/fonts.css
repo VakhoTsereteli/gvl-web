@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Monsterrat';
+    src: url(./Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Glaho';
+    src: url(./bpg_glaho.ttf);
+}
+
+@font-face {
+    font-family: 'Katerina';
+    src: url(./alk-katerina.ttf);
+}
+
+@font-face {
+    font-family: 'Balaveri';
+    src: url(./balavmtavr.ttf);
+}
+
+:root{
+    --activeColor: rgb(13, 59, 211);
+}
